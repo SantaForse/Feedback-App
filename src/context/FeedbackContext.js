@@ -12,12 +12,12 @@ export const FeedbackProvider = ({children}) => {
             rating: 10
         },
         {
-            id: 1,
+            id: 2,
             text: 'This is the second feedback item',
             rating: 9
         },
         {
-            id: 1,
+            id: 3,
             text: 'This is the third feedback item',
             rating: 8
         },
@@ -47,6 +47,7 @@ export const FeedbackProvider = ({children}) => {
         setFeedback(
             feedback.map((item) => (item.id === id ? { ...item, ...updItem } : item))
         )
+
     }
 
 
